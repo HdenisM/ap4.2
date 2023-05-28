@@ -1,0 +1,246 @@
+body {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*----------------------------------Все про иконку станции---------------------------------------*/
+
+.SK{
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Бокс станции для картинки*/
+.station{
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  animation: spin 4s linear infinite;
+  transition: top 1s ease-in-out;
+  z-index: 2;
+}
+
+/* Картинка станции */
+.image {
+  margin: 0 auto;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  z-index: 3;
+}
+.image:hover  {
+  transform: scale(1.5);
+}
+
+/* Элемент, заполняющий страницу после клика по санции */
+.fill{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  background-color: #FCBF48;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Действия по клику */
+.hide{
+  display: none;
+}
+.unhide{
+  display: flex;
+}
+.scale {
+  animation: scale 2s 1 alternate forwards;
+}
+
+/* Анимации */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    background-color: #FCBF48;
+  }
+  70% {
+      transform: scale(120);
+      background-color: #FCBF48;
+    }
+  100% {
+    transform: scale(150);
+    background-color: #202020;
+  }
+}
+/*----------------------------------Все про иконку станции---------------------------------------*/
+
+
+/*----------------------------------Все про цветные кругляши-------------------------------------*/
+
+/* База для кручения */
+.spin2{
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  top: 11%;
+  left: 31%;
+}
+
+/* Крутящиеся элементы */
+#animationspin{
+  position: absolute;
+  display: flex;
+  width: 25em;
+  height: 25em;
+  top: -200%;
+  left: -205%;
+  z-index: 1;
+}
+
+.krug1{
+  animation: spin2 3s 1s infinite ease-in-out;
+}
+.krug2{
+  animation: spin2 3s 1.1s infinite ease-in-out;
+}
+.krug3{
+  animation: spin2 3s 1.2s infinite ease-in-out;
+}
+.krug4{
+  animation: spin2 3s 1.3s infinite ease-in-out;
+}
+.krug5{
+  animation: spin2 3s 1.4s infinite ease-in-out;
+}
+
+/* Разноцветные кружки */
+#circle{
+  position: relative;
+  margin: 0 auto;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+}
+.yellow{
+  background-color: #FCBF48;
+  z-index: 2;
+}
+.blue{
+  background-color: #00E9F6;
+}
+.red{
+  background-color: #F61266;
+}
+.violet{
+  background-color: #AD48FC;
+}
+.green{
+  background-color: #5CD049;
+  z-index: 1;
+}
+
+/* Анимации */
+@keyframes spin2 {
+  0% {rotate: 0deg;}
+  80% {rotate: 360deg;}
+  100% {rotate: 360deg;}
+}
+/*----------------------------------Все про цветные кругляши-------------------------------------*/
+
+
+/*-------------------------------------Главная страница------------------------------------------*/
+
+.main{
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Верхний блок */
+.top{
+  transform: translatey(-10em);
+  display: flex;
+  width: 100vw;
+  height: 5em;
+  z-index: 0;
+}
+
+/* Анимация появления верхнего блока */
+.top_final{
+  animation: topappear 2s 1s 1 forwards;
+}
+@keyframes topappear {
+  0% {opacity: 0%; transform: translatey(-10em);}
+  100% {opacity: 100%; transform: translatey(0em);}
+}
+
+/* Контент верхнего блока */
+#topButton{
+  top: 30%;
+  margin: 0 auto;
+}
+.Bblue{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #00E9F6;
+  border-radius: 100%;
+}
+.Bred{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #F61266;
+  border-radius: 100%;
+}
+.Bviolet{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #AD48FC;
+  border-radius: 100%;
+}
+.Bgreen{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #5CD049;
+  border-radius: 100%;
+}
+.BIMMAGE{
+  position: relative;
+  margin: auto 0;
+  /*ЗНАЧЕК НА СДВИГАЕТЬСЯ ВНИЗ ПОЧЕМУ????*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------Главная страница------------------------------------------*/
