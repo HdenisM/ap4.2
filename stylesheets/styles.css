@@ -221,7 +221,92 @@ body {
 .BIMMAGE{
   position: relative;
   margin: auto 0;
-  /*ЗНАЧЕК НА СДВИГАЕТЬСЯ ВНИЗ ПОЧЕМУ????*/
+  width: 20em;
+  /*ЗНАЧЕК НА СДВИГАЕТЬСЯ?? ПОЧЕМУ????*/
+}
+
+#hidden-word1 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #00E9F6;
+  font-size: 12px;
+}
+
+#hidden-word2 {
+  font-family: Qanelas;
+  font-weight: 900;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -2.5em;
+  color: #F61266;
+  font-size: 12px;
+}
+
+#hidden-word3 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: 0.1em;
+  color: #FCBF48;
+  font-size: 12px;
+}
+
+#hidden-word4 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #AD48FC;
+  font-size: 12px;
+}
+
+#hidden-word5 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #5CD049;
+  font-size: 12px;
+}
+
+
+
+
+/*-------------------------------------Большое меню------------------------------------------*/
+
+.menue{
+  width: 100%;
+  position: relative;
+  opacity: 0%;
+}
+
+.Mистория{
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  left: -20.45em;
+  top: 6em;
+}
+
+/* Анимация появления большого меню */
+.menue_final{
+  animation: menueappear 2s 1s 1 forwards;
+}
+@keyframes menueappear {
+  0% {opacity: 0%;}
+  70% {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 
 
@@ -241,6 +326,5 @@ body {
 
 
 
-
-
 /*-------------------------------------Главная страница------------------------------------------*/
+}

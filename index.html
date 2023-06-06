@@ -3,18 +3,23 @@
 <head>
   <title>Мой сайт</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  <link rel="font" type="text/css" href="font/stylesheets.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
+<!-- станция и кружки -->
   <div class="SK">
     <div class="station">
       <div class="image" id="image">
-      <img src="images/станция.svg" alt="станция" width="200vw"></div>
+      <img src="images/station.svg" alt="станция" width="200vw"></div>
     </div>
 
+    <!-- желтая заливка -->
     <div class="fill"></div>
+    <!-- желтая заливка -->
 
+    <!-- кружки -->
     <div class="spin2">
       <div class="krug1" id="animationspin">
         <div class="blue" id="circle"></div>
@@ -31,23 +36,69 @@
       <div class="krug5" id="animationspin">
         <div class="yellow" id="circle"></div>
       </div>
-      </div>
-    </div>
-
-  <div class="main">
-    <div class="top">
-      <div class="Bblue" id="topButton"></div>
-      <div class="Bred" id="topButton"></div>
-      <div class="BIMAGE" id="topButton">
-        <img src="images/станция.svg" alt="станция" id="topButton" width="100vw">
-      </div>
-      <div class="Bviolet" id="topButton"></div>
-      <div class="Bgreen" id="topButton"></div>
     </div>
   </div>
 
+<!-- главная страница -->
+  <div class="main">
+    <!-- топ бар -->
+    <div class="top" id="top">
+      <!-- кнопка история -->
+      <div class="B1" id="topButton">
+        <div class="Bblue"  id="container1">
+          <div class="история" id="hidden-word1">
+          <p>[ИСТОРИЯ]</p>
+          </div>
+        </div>
+      </div>
+      <!-- кнопка мероприятия -->
+      <div class="B2" id="topButton">
+        <div class="Bred"  id="container2">
+          <div class="мероприятия" id="hidden-word2">
+          <p>[МЕРОПРИЯТИЯ]</p>
+          </div>
+        </div>
+      </div>
+      <!-- кнопка станция -->
+      <div class="B3" id="topButton">
+        <div class="BIMAGE" id="container3">
+          <img src="images/station.svg" alt="станция" width="100vw">
+            <div class="о станции" id="hidden-word3">
+              <p>[ПОДРОБНЕЕ О СТАНЦИИ]</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- кнопка магазин -->
+      <div class="B4" id="topButton">
+        <div class="Bviolet"  id="container4">
+          <div class="магазин" id="hidden-word4">
+          <p>[МАГАЗИН]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- кнопка новости -->
+      <div class="B5" id="topButton">
+        <div class="Bgreen"  id="container5">
+          <div class="новости" id="hidden-word5">
+          <p>[НОВОСТИ]</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
+    <div class="menue">
+      <div class="Mистория">
+        <img src="images/history.svg" alt="история"   width="750vw">
+      </div>
+    </div>
+
+
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
