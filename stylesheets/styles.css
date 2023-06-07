@@ -1,330 +1,417 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
 body {
-  background-color: #202020;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	min-height: 96%;
+}
+.content {
+	padding-bottom: 100px;
 }
 
-/*----------------------------------Все про иконку станции---------------------------------------*/
 
-.SK{
-  margin: 0 auto;
-  position: relative;
-}
-
-/* Бокс станции для картинки*/
-.station{
-  margin: 0 auto;
-  position: relative;
-  cursor: pointer;
-  animation: spin 4s linear infinite;
-  transition: top 1s ease-in-out;
-  z-index: 2;
-}
-
-/* Картинка станции */
-.image {
-  margin: 0 auto;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-  transform-origin: center;
-  z-index: 3;
-}
-.image:hover  {
-  transform: scale(1.5);
-}
-
-/* Элемент, заполняющий страницу после клика по санции */
-.fill{
-  width: 2vw;
-  height: 2vw;
-  border-radius: 100%;
-  background-color: #FCBF48;
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Действия по клику */
-.hide{
-  display: none;
-}
-.unhide{
-  display: flex;
-}
-.scale {
-  animation: scale 2s 1 alternate forwards;
-}
-
-/* Анимации */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+  body {
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
   }
-  100% {
-    transform: rotate(360deg);
+
+  /*----------------------------------Все про иконку станции---------------------------------------*/
+
+  .SK{
+    margin: 0 auto;
+    position: relative;
   }
-}
-@keyframes scale {
-  0% {
-    transform: scale(1);
+
+  /* Бокс станции для картинки*/
+  .station{
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    animation: spin 4s linear infinite;
+    transition: top 1s ease-in-out;
+    z-index: 2;
+  }
+
+  /* Картинка станции */
+  .image {
+    margin: 0 auto;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    z-index: 3;
+  }
+  .image:hover  {
+    transform: scale(1.5);
+  }
+
+  /* Элемент, заполняющий страницу после клика по санции */
+  .fill{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
     background-color: #FCBF48;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transition: transform 0.3s ease-in-out;
   }
-  70% {
-      transform: scale(120);
+
+  /* Действия по клику */
+  .hide{
+    display: none;
+  }
+  .unhide{
+    display: flex;
+  }
+  .scale {
+    animation: scale 2s 1 alternate forwards;
+  }
+
+  /* Анимации */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(1);
       background-color: #FCBF48;
     }
-  100% {
-    transform: scale(150);
-    background-color: #202020;
+    70% {
+        transform: scale(120);
+        background-color: #FCBF48;
+      }
+    100% {
+      transform: scale(150);
+      background-color: #202020;
+    }
   }
-}
-/*----------------------------------Все про иконку станции---------------------------------------*/
+  /*----------------------------------Все про иконку станции---------------------------------------*/
 
 
-/*----------------------------------Все про цветные кругляши-------------------------------------*/
+  /*----------------------------------Все про цветные кругляши-------------------------------------*/
 
-/* База для кручения */
-.spin2{
+  /* База для кручения */
+  .spin2{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    top: 11%;
+    left: 31%;
+  }
+
+  /* Крутящиеся элементы */
+  #animationspin{
+    position: absolute;
+    display: flex;
+    width: 25em;
+    height: 25em;
+    top: -200%;
+    left: -205%;
+    z-index: 1;
+  }
+
+  .krug1{
+    animation: spin2 3s 1s infinite ease-in-out;
+  }
+  .krug2{
+    animation: spin2 3s 1.1s infinite ease-in-out;
+  }
+  .krug3{
+    animation: spin2 3s 1.2s infinite ease-in-out;
+  }
+  .krug4{
+    animation: spin2 3s 1.3s infinite ease-in-out;
+  }
+  .krug5{
+    animation: spin2 3s 1.4s infinite ease-in-out;
+  }
+
+  /* Разноцветные кружки */
+  #circle{
+    position: relative;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+  }
+  .yellow{
+    background-color: #FCBF48;
+    z-index: 2;
+  }
+  .blue{
+    background-color: #00E9F6;
+  }
+  .red{
+    background-color: #F61266;
+  }
+  .violet{
+    background-color: #AD48FC;
+  }
+  .green{
+    background-color: #5CD049;
+    z-index: 1;
+  }
+
+  /* Анимации */
+  @keyframes spin2 {
+    0% {rotate: 0deg;}
+    80% {rotate: 360deg;}
+    100% {rotate: 360deg;}
+  }
+  /*----------------------------------Все про цветные кругляши-------------------------------------*/
+
+
+  /*-------------------------------------Главная страница------------------------------------------*/
+
+  .main{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+  }
+
+  /* Верхний блок */
+  .top{
+    transform: translatey(-10em);
+    display: flex;
+    width: 100vw;
+    height: 5em;
+    z-index: 0;
+  }
+
+  /* Анимация появления верхнего блока */
+  .top_final{
+    animation: topappear 2s 1s 1 forwards;
+  }
+  @keyframes topappear {
+    0% {opacity: 0%; transform: translatey(-10em);}
+    100% {opacity: 100%; transform: translatey(0em);}
+  }
+
+  /* Контент верхнего блока */
+  #topButton{
+    top: 30%;
+    margin: 0 auto;
+  }
+  .Bblue{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background-color: #00E9F6;
+    border-radius: 100%;
+    top: 2em;
+  }
+  .Bred{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background-color: #F61266;
+    border-radius: 100%;
+    top: 2em;
+  }
+  .Bviolet{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background-color: #AD48FC;
+    border-radius: 100%;
+    top: 2em;
+  }
+  .Bgreen{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    background-color: #5CD049;
+    border-radius: 100%;
+    top: 2em;
+  }
+  .BIMAGE{
+    position: relative;
+    margin: auto 0;
+    width: 7vw;
+    top: 1.5em;
+  }
+
+  #hidden-word1 {
+    font-family: Qanelas;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+    top: 3em;
+    left: -1.2em;
+    color: #00E9F6;
+    font-size: 12px;
+  }
+
+  #hidden-word2 {
+    font-family: Qanelas;
+    font-weight: 900;
+    visibility: hidden;
+    position: relative;
+    top: 3em;
+    left: -2.5em;
+    color: #F61266;
+    font-size: 12px;
+  }
+
+  #hidden-word3 {
+    font-family: Qanelas;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+    top: 3em;
+    left: -0.7em;
+    color: #FCBF48;
+    font-size: 12px;
+  }
+
+  #hidden-word4 {
+    font-family: Qanelas;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+    top: 3em;
+    left: -1.2em;
+    color: #AD48FC;
+    font-size: 12px;
+  }
+
+  #hidden-word5 {
+    font-family: Qanelas;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+    top: 3em;
+    left: -1.2em;
+    color: #5CD049;
+    font-size: 12px;
+  }
+
+
+  /* Большое меню */
+
+  .menue{
+    width: 100%;
+    height: 30vw;
+    position: absolute;
+    opacity: 0%;
+    display: inline-block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Историяimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Афишаimage{
+    position: relative;
+    left: -100vw;
+  }
+  .Сувенирыimage{
+    position: relative;
+    left: -100vw;
+  }
+  .Новостиimage{
+    position: relative;
+    left: -100vw;
+  }
+
+  /* центрирование при нажатии на стрелочку */
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow-right {
   position: absolute;
-  width: 5em;
-  height: 5em;
-  top: 11%;
-  left: 31%;
-}
-
-/* Крутящиеся элементы */
-#animationspin{
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  border-left: 2em solid #F61266;
+  z-index: 10;
+  }
+  .arrow-right2 {
   position: absolute;
-  display: flex;
-  width: 25em;
-  height: 25em;
-  top: -200%;
-  left: -205%;
-  z-index: 1;
-}
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  border-left: 2em solid #AD48FC;
+  z-index: 9;
+  }
+  .arrow-right3 {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  border-left: 2em solid #5CD049;
+  z-index: 8;
+  }
 
-.krug1{
-  animation: spin2 3s 1s infinite ease-in-out;
-}
-.krug2{
-  animation: spin2 3s 1.1s infinite ease-in-out;
-}
-.krug3{
-  animation: spin2 3s 1.2s infinite ease-in-out;
-}
-.krug4{
-  animation: spin2 3s 1.3s infinite ease-in-out;
-}
-.krug5{
-  animation: spin2 3s 1.4s infinite ease-in-out;
-}
+  /* Анимация появления большого меню */
+  .menue_final{
+    animation: menueappear 2s 1s 1 forwards;
+  }
+  @keyframes menueappear {
+    0% {opacity: 0%;}
+    70% {opacity: 0%;}
+    100% {opacity: 100%;}
+  }
 
-/* Разноцветные кружки */
-#circle{
-  position: relative;
-  margin: 0 auto;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-}
-.yellow{
-  background-color: #FCBF48;
-  z-index: 2;
-}
-.blue{
-  background-color: #00E9F6;
-}
-.red{
-  background-color: #F61266;
-}
-.violet{
-  background-color: #AD48FC;
-}
-.green{
-  background-color: #5CD049;
-  z-index: 1;
-}
+  /*-------------------------------------Главная страница------------------------------------------*/
 
-/* Анимации */
-@keyframes spin2 {
-  0% {rotate: 0deg;}
-  80% {rotate: 360deg;}
-  100% {rotate: 360deg;}
-}
-/*----------------------------------Все про цветные кругляши-------------------------------------*/
+  /*------------------------------------------Подвал----------------------------------------------*/
 
+  .podval {
+  	position: absolute;
+  	left: 0;
+  	bottom: 12vw;
+  	width: 100%;
+  	height: 100px;
+  }
+  .podvalimg{
+    opacity: 0%;
+    width: 100vw;
+  }
+  /* Анимация появления подвала */
+  .podval_final{
+    animation: podvalappear 2s 1.4s 1 forwards;
+  }
+  @keyframes podvalappear {
+    0% {opacity: 0%;}
+    70% {opacity: 0%;}
+    100% {opacity: 100%;}
+  }
 
-/*-------------------------------------Главная страница------------------------------------------*/
-
-.main{
-  position: fixed;
-  width: 100vw;
-  height: 100%;
-  z-index: 0;
-}
-
-/* Верхний блок */
-.top{
-  transform: translatey(-10em);
-  display: flex;
-  width: 100vw;
-  height: 5em;
-  z-index: 0;
-}
-
-/* Анимация появления верхнего блока */
-.top_final{
-  animation: topappear 2s 1s 1 forwards;
-}
-@keyframes topappear {
-  0% {opacity: 0%; transform: translatey(-10em);}
-  100% {opacity: 100%; transform: translatey(0em);}
-}
-
-/* Контент верхнего блока */
-#topButton{
-  top: 30%;
-  margin: 0 auto;
-}
-.Bblue{
-  position: relative;
-  width: 2em;
-  height: 2em;
-  background-color: #00E9F6;
-  border-radius: 100%;
-}
-.Bred{
-  position: relative;
-  width: 2em;
-  height: 2em;
-  background-color: #F61266;
-  border-radius: 100%;
-}
-.Bviolet{
-  position: relative;
-  width: 2em;
-  height: 2em;
-  background-color: #AD48FC;
-  border-radius: 100%;
-}
-.Bgreen{
-  position: relative;
-  width: 2em;
-  height: 2em;
-  background-color: #5CD049;
-  border-radius: 100%;
-}
-.BIMMAGE{
-  position: relative;
-  margin: auto 0;
-  width: 20em;
-  /*ЗНАЧЕК НА СДВИГАЕТЬСЯ?? ПОЧЕМУ????*/
-}
-
-#hidden-word1 {
-  font-family: Qanelas;
-  font-weight: bold;
-  visibility: hidden;
-  position: relative;
-  top: 3em;
-  left: -1.2em;
-  color: #00E9F6;
-  font-size: 12px;
-}
-
-#hidden-word2 {
-  font-family: Qanelas;
-  font-weight: 900;
-  visibility: hidden;
-  position: relative;
-  top: 3em;
-  left: -2.5em;
-  color: #F61266;
-  font-size: 12px;
-}
-
-#hidden-word3 {
-  font-family: Qanelas;
-  font-weight: bold;
-  visibility: hidden;
-  position: relative;
-  top: 3em;
-  left: 0.1em;
-  color: #FCBF48;
-  font-size: 12px;
-}
-
-#hidden-word4 {
-  font-family: Qanelas;
-  font-weight: bold;
-  visibility: hidden;
-  position: relative;
-  top: 3em;
-  left: -1.2em;
-  color: #AD48FC;
-  font-size: 12px;
-}
-
-#hidden-word5 {
-  font-family: Qanelas;
-  font-weight: bold;
-  visibility: hidden;
-  position: relative;
-  top: 3em;
-  left: -1.2em;
-  color: #5CD049;
-  font-size: 12px;
-}
-
-
-
-
-/*-------------------------------------Большое меню------------------------------------------*/
-
-.menue{
-  width: 100%;
-  position: relative;
-  opacity: 0%;
-}
-
-.Mистория{
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  left: -20.45em;
-  top: 6em;
-}
-
-/* Анимация появления большого меню */
-.menue_final{
-  animation: menueappear 2s 1s 1 forwards;
-}
-@keyframes menueappear {
-  0% {opacity: 0%;}
-  70% {opacity: 0%;}
-  100% {opacity: 100%;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------Главная страница------------------------------------------*/
-}
+  /*------------------------------------------Подвал----------------------------------------------*/
+  }

@@ -1,3 +1,4 @@
+/*------------------------------------нажатие на станцию----------------------------------------------*/
 $("#image").on('click', function() {
   $(".fill").toggleClass('scale')
   $(".station").toggleClass('hide')
@@ -10,9 +11,11 @@ $("#image").on('click', function() {
 
   $(".top").toggleClass('top_final')
   $(".menue").toggleClass('menue_final')
+  $(".podvalimg").toggleClass('podval_final')
 });
+/*------------------------------------нажатие на станцию----------------------------------------------*/
 
-
+/*------------------------------------кнопки верхнего блока----------------------------------------------*/
 const el = document.getElementById('container1');
 const hiddenDiv = document.getElementById('hidden-word1');
 el.addEventListener('mouseover', function handleMouseOver() {
@@ -57,3 +60,24 @@ el5.addEventListener('mouseover', function handleMouseOver() {
 el5.addEventListener('mouseout', function handleMouseOut() {
   hiddenDiv5.style.visibility = 'hidden';
 });
+/*------------------------------------кнопки верхнего блока----------------------------------------------*/
+
+/*------------------------------------нажатие на стрелочку----------------------------------------------*/
+$(".arrow-right").on('click', function() {
+  $(".Историяimage").toggleClass('hide')
+  $(".arrow-right").toggleClass('hide')
+  $(".Афишаimage").toggleClass('center')
+});
+
+$(".arrow-right2").on('click', function() {
+  $(".Афишаimage").toggleClass('hide')
+  $(".arrow-right2").toggleClass('hide')
+  $(".Сувенирыimage").toggleClass('center')
+});
+
+$(".arrow-right3").on('click', function() {
+  $(".Сувенирыimage").toggleClass('hide')
+  $(".arrow-right3").toggleClass('hide')
+  $(".Новостиimage").toggleClass('center')
+});
+/*------------------------------------нажатие на стрелочку----------------------------------------------*/
