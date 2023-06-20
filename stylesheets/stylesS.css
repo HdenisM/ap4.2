@@ -1,0 +1,258 @@
+body {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.main{
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Верхний блок */
+.top{
+  display: flex;
+  width: 100vw;
+  height: 5em;
+  z-index: 0;
+}
+
+/* Контент верхнего блока */
+#topButton{
+  top: 30%;
+  margin: 0 auto;
+}
+.Bblue{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #00E9F6;
+  border-radius: 100%;
+  top: 1.25em;
+  cursor: pointer;
+}
+.Bred{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #F61266;
+  border-radius: 100%;
+  top: 1.25em;
+  cursor: pointer;
+}
+.Bviolet{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #AD48FC;
+  border-radius: 100%;
+  top: 1.25em;
+  cursor: pointer;
+}
+.Bgreen{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #5CD049;
+  border-radius: 100%;
+  top: 1.25em;
+  cursor: pointer;
+}
+.BIMAGE{
+  position: relative;
+  margin: auto 0;
+  width: 7em;
+  top: 1.25em;
+  cursor: pointer;
+}
+
+#hidden-word1 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #00E9F6;
+  font-size: 12px;
+}
+
+#hidden-word2 {
+  font-family: Qanelas;
+  font-weight: 900;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -2.5em;
+  color: #F61266;
+  font-size: 12px;
+}
+
+#hidden-word3 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -0.7em;
+  color: #FCBF48;
+  font-size: 12px;
+}
+
+#hidden-word4 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #AD48FC;
+  font-size: 12px;
+}
+
+#hidden-word5 {
+  font-family: Qanelas;
+  font-weight: bold;
+  visibility: hidden;
+  position: relative;
+  top: 3em;
+  left: -1.2em;
+  color: #5CD049;
+  font-size: 12px;
+}
+.hide{
+  display: none;
+}
+.pink{
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+
+.center{
+  position: absolute;
+  width: 90%;
+  height: 50px;
+  top: 50%;
+  display: flex;
+  gap: 3em;
+  margin: 0 auto;
+  left: 5%;
+}
+.container1{
+box-sizing: border-box;
+position: relative;
+width: 30vw;
+height: 30vw;
+top: -14.5em;
+border: 5px solid #FFFFFF;
+overflow: hidden;
+}
+.container2{
+box-sizing: border-box;
+position: relative;
+width: 30vw;
+height: 30vw;
+top: -14.5em;
+border: 5px solid #FFFFFF;
+overflow: hidden;
+}
+.container3{
+box-sizing: border-box;
+position: relative;
+width: 30vw;
+height: 30vw;
+top: -14.5em;
+border: 5px solid #FFFFFF;
+overflow: hidden;
+}
+.bottom1{
+position: absolute;
+width: 100%;
+height: 100px;
+background: #AD48FC;
+top: 80%;
+}
+.bottom2{
+position: absolute;
+width: 100%;
+height: 100px;
+background: #AD48FC;
+top: 80%;
+}
+.bottom3{
+position: absolute;
+width: 100%;
+height: 100px;
+background: #AD48FC;
+top: 80%;
+}
+#text{
+z-index: 2;
+font-family: 'Qanelas';
+font-style: normal;
+font-weight: 700;
+font-size:2vw;
+line-height: 45px;
+color: #FFFFFF;
+margin: 0.5vw;
+}
+.glassescontainer{
+  position: relative;
+  top: 30%;
+  width: 16vw;
+  margin: 0 auto;
+}
+.glasses{
+  width: 16vw;
+  animation: spin 5s 1s linear infinite;
+  cursor: pointer;
+}
+.capcontainer{
+  position: relative;
+  top: 25%;
+  width: 16vw;
+  margin: 0 auto;
+}
+.cap{
+  width: 16vw;
+  animation: spin 5s 1.5s linear infinite;
+  cursor: pointer;
+}
+.hoodiecontainer{
+  position: relative;
+  top: 15%;
+  width: 25vw;
+  margin: 0 auto;
+}
+.hoodie{
+  width: 25vw;
+  animation: spin 5s 2s linear infinite;
+  cursor: pointer;
+}
+.hoodie:hover{
+  animation: paused;
+}
+.cap:hover{
+  animation: paused;
+}
+.glasses:hover{
+  animation: paused;
+}
+
+@keyframes spin {
+  0%{rotate: 0deg;}
+  100%{rotate: 360deg;}
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesS.css">
+    <link rel="font" type="text/css" href="font/stylesheets.css">
+    <link rel="icon" type="image/x-icon" href="images/suveniri.svg">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="scriptS.js"></script>
+
+  </head>
+  <body>
+    <script src="scriptE.js"></script>
+
+    <div class="main">
+      <!-- топ бар -->
+      <div class="top" id="top">
+        <!-- кнопка история -->
+        <div class="B1" id="topButton" >
+          <div class="Bblue"  id="container1" onclick="window.location.href='history.html'">
+            <div class="история" id="hidden-word1">
+            <p>[ИСТОРИЯ]</p>
+            </div>
+          </div>
+        </div>
+        <!-- кнопка мероприятия -->
+        <div class="B2" id="topButton">
+          <div class="Bred"  id="container2" onclick="window.location.href='event.html'">
+            <div class="мероприятия" id="hidden-word2">
+            <p>[МЕРОПРИЯТИЯ]</p>
+            </div>
+          </div>
+        </div>
+        <!-- кнопка станция -->
+        <div class="B3" id="topButton">
+          <div id="container3">
+            <img src="images/station.svg" alt="станция" class="BIMAGE" onclick="window.location.href='index.html'">
+              <div class="о станции" id="hidden-word3">
+                <p>[ПОДРОБНЕЕ О СТАНЦИИ]</p>
+              </div>
+          </div>
+        </div>
+        <!-- кнопка магазин -->
+        <div class="B4" id="topButton">
+          <div class="Bviolet"  id="container4" onclick="window.location.href='shop.html'">
+            <div class="магазин" id="hidden-word4">
+            <p>[МАГАЗИН]</p>
+            </div>
+          </div>
+        </div>
+        <!-- кнопка новости -->
+        <div class="B5" id="topButton">
+          <div class="Bgreen"  id="container5" onclick="window.location.href='news.html'">
+            <div class="новости" id="hidden-word5">
+            <p>[НОВОСТИ]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+
+        <div class="container1">
+          <div class="glassescontainer">
+            <img src="images/glasses.svg" alt="glasses" class="glasses">
+          </div>
+          <div class="bottom1"><div class="text1" id="text">ОЧКИ (5 ГЛАЗ) 700₽</div></div>
+        </div>
+
+        <div class="container2">
+          <div class="capcontainer">
+            <img src="images/cap.svg" alt="cap" class="cap">
+          </div>
+          <div class="bottom2"><div class="text2" id="text">ШАПКА 400₽</div></div>
+        </div>
+
+        <div class="container3">
+          <div class="hoodiecontainer">
+            <img src="images/hoodie.svg" alt="hoodie" class="hoodie">
+          </div>
+          <div class="bottom3"><div class="text3" id="text">ХУДИ (3 РУКАВА) 3200₽</div></div>
+        </div>
+
+      </div>
+  </body>
+</html>

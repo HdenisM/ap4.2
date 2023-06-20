@@ -116,10 +116,10 @@ body {
   #animationspin{
     position: absolute;
     display: flex;
-    width: 25em;
-    height: 25em;
-    top: -200%;
-    left: -205%;
+    width: 20em;
+    height: 20em;
+    top: -165%;
+    left: -170%;
     z-index: 1;
   }
 
@@ -143,8 +143,8 @@ body {
   #circle{
     position: relative;
     margin: 0 auto;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     border-radius: 100%;
   }
   .yellow{
@@ -175,7 +175,6 @@ body {
 
 
   /*-------------------------------------Главная страница------------------------------------------*/
-
   .main{
     position: fixed;
     width: 100vw;
@@ -198,51 +197,57 @@ body {
   }
   @keyframes topappear {
     0% {opacity: 0%; transform: translatey(-10em);}
-    100% {opacity: 100%; transform: translatey(0em);}
+    100% {opacity: 100%; transform: translatey(-1em);}
   }
 
   /* Контент верхнего блока */
   #topButton{
-    top: 30%;
+    top: 10%;
     margin: 0 auto;
   }
   .Bblue{
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #00E9F6;
     border-radius: 100%;
     top: 2em;
+    cursor: pointer;
   }
   .Bred{
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #F61266;
     border-radius: 100%;
     top: 2em;
+		cursor: pointer;
   }
   .Bviolet{
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #AD48FC;
     border-radius: 100%;
     top: 2em;
+		cursor: pointer;
   }
   .Bgreen{
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #5CD049;
     border-radius: 100%;
     top: 2em;
+		cursor: pointer;
   }
   .BIMAGE{
     position: relative;
     margin: auto 0;
-    width: 7vw;
-    top: 1.5em;
+		left: 0.8em;
+    width: 4.6em;
+    top: 1.8em;
+		cursor: pointer;
   }
 
   #hidden-word1 {
@@ -253,7 +258,7 @@ body {
     top: 3em;
     left: -1.2em;
     color: #00E9F6;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #hidden-word2 {
@@ -264,7 +269,7 @@ body {
     top: 3em;
     left: -2.5em;
     color: #F61266;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #hidden-word3 {
@@ -273,9 +278,9 @@ body {
     visibility: hidden;
     position: relative;
     top: 3em;
-    left: -0.7em;
+    left: 0.7vw;
     color: #FCBF48;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #hidden-word4 {
@@ -286,7 +291,7 @@ body {
     top: 3em;
     left: -1.2em;
     color: #AD48FC;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #hidden-word5 {
@@ -297,7 +302,7 @@ body {
     top: 3em;
     left: -1.2em;
     color: #5CD049;
-    font-size: 12px;
+    font-size: 10px;
   }
 
 
@@ -348,10 +353,11 @@ body {
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: 2em solid transparent;
-  border-bottom: 2em solid transparent;
-  border-left: 2em solid #F61266;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1.5em solid #F61266;
   z-index: 10;
+  cursor: pointer;
   }
   .arrow-right2 {
   position: absolute;
@@ -360,10 +366,11 @@ body {
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: 2em solid transparent;
-  border-bottom: 2em solid transparent;
-  border-left: 2em solid #AD48FC;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1.5em solid #AD48FC;
   z-index: 9;
+  cursor: pointer;
   }
   .arrow-right3 {
   position: absolute;
@@ -372,10 +379,11 @@ body {
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: 2em solid transparent;
-  border-bottom: 2em solid transparent;
-  border-left: 2em solid #5CD049;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1.5em solid #5CD049;
   z-index: 8;
+  cursor: pointer;
   }
 
   /* Анимация появления большого меню */
@@ -397,7 +405,7 @@ body {
   	left: 0;
   	bottom: 12vw;
   	width: 100%;
-  	height: 100px;
+  	height: 90px;
   }
   .podvalimg{
     opacity: 0%;

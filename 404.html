@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>404</title>
+
+    <link rel="font" type="text/css" href="font/stylesheets.css">
+    <link rel="icon" type="image/x-icon" href="images/station.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <style media="screen">
+    body {
+      background-color: #202020;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      overflow: hidden;
+      height: 100vh;
+      width: 100%;
+    }
+    .main{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+    }
+    /* rocket */
+    .rocket{
+      position: relative;
+      width: 1px;
+      left: -1.5vw;
+      margin: 0 auto;
+      top: 50%;
+      animation: rocketfly1 1s infinite;
+
+    }
+    @keyframes rocketfly1 {
+      0%{transform: scale(100%); transform: rotate(0deg);}
+      30%{transform: scale(97%); transform: rotate(2deg);}
+      80%{transform: scale(97%); transform: rotate(-2deg);}
+      100%{transform: scale(100%); transform: rotate(0deg);}
+    }
+    .linecontainer{
+      width: 100vw;
+      height: 100vh;
+    }
+    /* Line 1 */
+    .line1{
+      margin: 0 auto;
+      position: relative;
+      top: 10vw;
+      top: 50%;
+      left: -10vw;
+      width: 105.54px;
+      height: 0px;
+      border: 5px solid #FCBF48;
+      transform: rotate(90deg);
+      opacity: 0%;
+      animation: fly1 1s 1s infinite;
+    }
+    @keyframes fly1 {
+      0% {width: 0px; border: 0px solid #FCBF48; top: 30%; opacity: 100%;}
+      20% {width: 105.54px; border: 5px solid #FCBF48; top: 70%}
+      59% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      60% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      100% {opacity: 0%}
+    }
+    /* Line 2 */
+    .line2{
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      left: -20vw;
+      width: 67.8px;
+      border: 5px solid #FCBF48;
+      transform: rotate(90deg);
+      opacity: 0%;
+      animation: fly2 1s 1.5s infinite;
+    }
+    @keyframes fly2 {
+      0% {width: 0px; border: 0px solid #FCBF48; top: 40%; opacity: 100%;}
+      20% {width: 105.54px; border: 5px solid #FCBF48; top: 70%}
+      59% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      60% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      100% {opacity: 0%}
+    }
+    /* Line 3 */
+    .line3{
+      margin: 0 auto;
+      position: relative;
+      top: 15vw;
+      top: 50%;
+      left: 10vw;
+      width: 45.12px;
+      height: 0px;
+      border: 5px solid #FCBF48;
+      transform: rotate(90deg);
+      opacity: 0%;
+      animation: fly3 1s 2s infinite;
+    }
+    @keyframes fly3 {
+      0% {width: 0px; border: 0px solid #FCBF48; top: 30%; opacity: 100%;}
+      20% {width: 105.54px; border: 5px solid #FCBF48; top: 70%}
+      59% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      60% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      100% {opacity: 0%}
+    }
+    /* Line 4 */
+    .line4{
+      margin: 0 auto;
+      position: relative;
+      top: 30vw;
+      top: 50%;
+      left: 20vw;
+      width: 45.12px;
+      height: 0px;
+      border: 5px solid #FCBF48;
+      transform: rotate(90deg);
+      opacity: 0%;
+      animation: fly4 1s 2.5s infinite;
+    }
+    @keyframes fly4 {
+      0% {width: 0px; border: 0px solid #FCBF48; top: 30%; opacity: 100%;}
+      20% {width: 105.54px; border: 5px solid #FCBF48; top: 70%}
+      59% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      60% {width: 0px; border: 0px solid #FCBF48; top: 80%; opacity: 0%}
+      100% {opacity: 0%}
+    }
+    /* 404 */
+    .fourofour{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Qanelas';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30vw;
+      color: rgba(252, 191, 72, 0.05);
+    }
+    /* Ох! Это не верные координаты... */
+    .text1{
+      position: relative;
+      top: 2vw;
+      font-family: 'Qanelas';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1vw;
+      text-align: center;
+      color: #FCBF48;
+    }
+    /* Вернуться на станцию */
+    .button{
+      cursor: pointer;
+      position: relative;
+      top: 2vw;
+      font-family: 'Qanelas';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1vw;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #FCBF48;
+    }
+    /* planet1 */
+    .planet1{
+      position: relative;
+      width: 30vw;
+      height: 30vw;
+      top:-20vw;
+      left:-10vw;
+      border-radius: 100%;
+      background: #F61266;
+      animation: flow1 10s linear infinite;
+    }
+    @keyframes flow1 {
+      0%{top: -100vw;}
+      100%{top: 0vw;}
+    }
+    /* planet2*/
+    .planet2{
+      position: relative;
+      width: 3vw;
+      height: 3vw;
+      top:-20vw;
+      left: 70vw;
+      border-radius: 100%;
+      animation: flow2 40s linear infinite;
+      background: #5CD049;
+    }
+    @keyframes flow2 {
+      0%{top: -90vw;}
+      100%{top: 0vw;}
+    }
+    /* planet3 */
+    .planet3{
+      position: relative;
+      width: 10vw;
+      height: 10vw;
+      top:-20vw;
+      left: 85vw;
+      border-radius: 100%;
+      animation: flow3 20s linear infinite;
+      background: #03D5E0;
+    }
+    @keyframes flow3 {
+      0%{top: -100vw;}
+      100%{top: 0vw;}
+    }
+  </style>
+  <body>
+    <div class="main">
+
+      <div class="text1">
+        Ох! Это не верные координаты...
+      </div>
+      <div class="fourofour">
+        404
+      </div>
+      <div class="button" onclick="window.location.href='index.html'">
+        Вернуться на станцию
+      </div>
+      <div class="linecontainer">
+        <div class="rocket">
+          <img src="images/rocket.svg" alt="rocket">
+        </div>
+        <div class="line1 fly1"></div>
+        <div class="line2 fly2"></div>
+        <div class="line3 fly3"></div>
+        <div class="line4 fly4"></div>
+      </div>
+      <div class="planet1"> </div>
+      <div class="planet2"> </div>
+      <div class="planet3"> </div>
+
+    </div>
+  </body>
+</html>

@@ -34,14 +34,7 @@ el2.addEventListener('mouseout', function handleMouseOut() {
   hiddenDiv2.style.visibility = 'hidden';
 });
 
-const el3 = document.getElementById('container3');
-const hiddenDiv3 = document.getElementById('hidden-word3');
-el3.addEventListener('mouseover', function handleMouseOver() {
-  hiddenDiv3.style.visibility = 'visible';
-});
-el3.addEventListener('mouseout', function handleMouseOut() {
-  hiddenDiv3.style.visibility = 'hidden';
-});
+
 
 const el4 = document.getElementById('container4');
 const hiddenDiv4 = document.getElementById('hidden-word4');
